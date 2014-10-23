@@ -65,3 +65,19 @@ header
   font-weight: bold;
 
 
+
+video#bgvid {
+  position: fixed; right: 0; bottom: 0;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: -100;
+  background: url(imgs/default.jpg) no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-device-width: 800px) {
+  html { background: url(imgs/default.jpg) #000 no-repeat center center fixed; }
+  #bgvid { display: none; }
+}
+
+video#bgvid { transition: 1s opacity; }
+.stopfade { opacity: .5; }
