@@ -36,7 +36,6 @@ header {
 .menu {
   position: absolute;
   right: 0;
-  background-color: #00f;
   width: 30%;
   height: 100%;
 }
@@ -46,8 +45,19 @@ header {
 .menu .arrow {
   color: #fff;
 }
+.menu ul {
+  background-color: #349fe3;
+  width: 1%;
+  float: right;
+  overflow: hidden;
+  -webkit-transition: width 2s;
+/* For Safari 3.1 to 6.0 */
+  transition: width 2s;
+}
+.menu ul:hover {
+  width: 100%;
+}
 .menu ul li {
-  background-color: #f00;
   height: 25%;
   text-align: right;
   padding-right: 6%;
